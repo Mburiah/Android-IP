@@ -6,19 +6,18 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/summer"/>
+        android:src="@drawable/summer" />
 
     <TextView
         android:id="@+id/charactersTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:background="@color/colorTextIcons"
         android:text="Here is a list of the available characters;"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="20sp"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
 
     <ListView
         android:id="@+id/listView1"
@@ -27,9 +26,10 @@
         android:layout_below="@+id/charactersTextView"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="-49dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp" />
+        android:layout_marginRight="6dp"
+        android:background="@color/colorTextIcons" />
 
     <Button
         android:id="@+id/locationButton"

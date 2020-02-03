@@ -3,10 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorPrimaryText">#99E904</color>
+    <color name="colorPrimaryText">#040601</color>
     <color name="colorSecondaryText">#727272</color>
     <color name="colorDivider">#B6B6B6</color>
-    <color name="colorPrimaryLight">#FFCCBC</color>
+    <color name="colorPrimaryLight">#1EF1E6</color>
     <color name="colorTextIcons">#FFFFFF</color>
 
 </resources>

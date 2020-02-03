@@ -8,7 +8,8 @@ Hope you'll totally enjoy :wink:<br>
 Lets get Schwifty! (Sn02 E5)
 
 ### Technologies used.
--Java android.
+-Java
+ - android.
 -
 
 ### Contact details.

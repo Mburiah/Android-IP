@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 import butterknife.BindView;
 
 public class MainActivity extends AppCompatActivity {
+
     @BindView(R.id.viewMoreButton) Button mViewMoreButton;
     @BindView(R.id.formEdittext) EditText mFormEditText;
 
@@ -32,6 +33,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

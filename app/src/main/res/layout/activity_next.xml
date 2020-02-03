@@ -2,13 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/interdimensional"
+        android:scaleType="centerCrop"/>
+
+
     <TextView
         android:id="@+id/locationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Here is a list characters known locations;"/>
+        android:text="Here is a list of characters known locations;"
+        android:background="@color/colorTextIcons"/>
 
     <ListView
         android:id="@+id/listView1"
@@ -16,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/locationTextView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorTextIcons"/>
 
 </RelativeLayout>

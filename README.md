@@ -7,4 +7,10 @@ It's a fun app, built for a school project by the developer with you in mind. <b
 Hope you'll totally enjoy :wink:<br>
 Lets get Schwifty! (Sn02 E5)
 
-###
+### Technologies used.
+-Java android.
+-
+
+### Contact details.
+
+For contributions email at mburiahb@gmail.com

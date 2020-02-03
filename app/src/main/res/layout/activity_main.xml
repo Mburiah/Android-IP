@@ -9,14 +9,14 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/RMtheme" />
+        android:src="@drawable/rmtheme" />
 
     <EditText
         android:id="@+id/formEdittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/viewMoreButton"
-        android:layout_marginBottom="-47dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/colorTextIcons"/>
 
     <Button

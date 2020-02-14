@@ -1,4 +1,4 @@
-package com.example.rickmorty;
+package com.example.rickmorty.models;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.Intent;
+
+import com.example.rickmorty.R;
 
 import butterknife.ButterKnife;
 import butterknife.BindView;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String form = mFormEditText.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this,ListActivity.class);
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
                 intent.putExtra(form, form);
                 startActivity(intent);
             }

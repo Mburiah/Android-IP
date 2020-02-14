@@ -1,4 +1,4 @@
-package com.example.rickmorty;
+package com.example.rickmorty.models;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.rickmorty.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

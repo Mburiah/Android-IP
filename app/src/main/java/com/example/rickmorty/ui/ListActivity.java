@@ -1,4 +1,4 @@
-package com.example.rickmorty;
+package com.example.rickmorty.models;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.rickmorty.R;
 
 import butterknife.ButterKnife;
 import butterknife.BindView;
@@ -42,7 +44,7 @@ public class ListActivity extends AppCompatActivity{
         mLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ListActivity.this,NextActivity.class);
+                Intent intent = new Intent(ListActivity.this, NextActivity.class);
                 startActivity(intent);
             }
         });

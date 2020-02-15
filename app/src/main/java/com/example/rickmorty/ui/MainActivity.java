@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.Intent;
+import android.widget.TextView;
 
 import com.example.rickmorty.R;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String form = mFormEditText.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
                 intent.putExtra(form, form);
                 startActivity(intent);
             }

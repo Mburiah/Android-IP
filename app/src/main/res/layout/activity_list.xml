@@ -10,7 +10,7 @@
         android:src="@drawable/summer" />
 
     <TextView
-        android:id="@+id/charactersTextView"
+        android:id="@+id/showHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -23,7 +23,7 @@
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/charactersTextView"
+        android:layout_below="@+id/showHere"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="1dp"
@@ -35,7 +35,7 @@
         android:id="@+id/locationButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/charactersTextView"
+        android:layout_above="@id/showHere"
         android:background="@color/colorTextIcons"
         android:layout_marginBottom="20dp"
         android:text="Tap here to view locations" />

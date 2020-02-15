@@ -13,24 +13,14 @@ public class RickandmortyClient {
     public static final String BASE_URL = "https://rickandmortyapi.com/api/";
 
     private static Retrofit retrofit = null;
-     public static RickandmortyApi getClient(){
+     public static Retrofit getClient(){
          if (retrofit == null){
-             OkHttpClient okHttpClient= new OkHttpClient.Builder()
-                     .addInterceptor(new Interceptor() {
-                         @Override
-                         public Response intercept(Chain chain) throws IOException {
-                             Request newRequest = chain.request().newBuilder()
-                                     .build();
-                             return chain.proceed(newRequest);
-                         }
-                     })
-                     .build();
+
              retrofit = new Retrofit.Builder()
                      .baseUrl(BASE_URL)
-                     .client(okHttpClient)
                      .addConverterFactory(GsonConverterFactory.create())
                      .build();
          }
-         return retrofit.create(RickandmortyApi.class);
+         return retrofit;
      }
 }

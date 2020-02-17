@@ -14,6 +14,7 @@ import com.example.rickmorty.models.characters.Response;
 import com.example.rickmorty.models.characters.Result;
 import com.example.rickmorty.network.RickandmortyApi;
 import com.example.rickmorty.network.RickandmortyClient;
+import com.google.gson.internal.bind.ArrayTypeAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,13 +42,15 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
                 if (response.isSuccessful()) {
-                    results = response.body().getResults();
+                    List<Result> resultsList = response.body().getResults();
                     for (Result result : results) {
                         mName.setText(result.getName());
                     }
                 } else {
                     mError.setText(response.code());
                 }
+//                ArrayAdapter adapter = new RickAndMortyArrayAdapter(TestActivity.this, android.R.layout.simple_list_item_1, results);
+//                mName.setAdapter(adapter);
             }
             @Override
             public void onFailure(Call<Response> call, Throwable t) {

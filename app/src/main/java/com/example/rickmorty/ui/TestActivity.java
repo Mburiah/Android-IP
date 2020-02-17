@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.rickmorty.R;
@@ -28,6 +29,7 @@ public class TestActivity extends AppCompatActivity {
     List<Result> results;
     @BindView(R.id.name) TextView mName;
     @BindView(R.id.error) TextView mError;
+    @BindView(R.id.progressBar) ProgressBar mProgressBar;
 
 
     @Override
@@ -49,12 +51,15 @@ public class TestActivity extends AppCompatActivity {
                 } else {
                     mError.setText(response.code());
                 }
+
 //                ArrayAdapter adapter = new RickAndMortyArrayAdapter(TestActivity.this, android.R.layout.simple_list_item_1, results);
 //                mName.setAdapter(adapter);
             }
             @Override
             public void onFailure(Call<Response> call, Throwable t) {
-
+//                Log.e(TAG, "onFailure: ", t);
+//                hideProgressBar();
+//                showFailureMessage();
             }
         });
     }

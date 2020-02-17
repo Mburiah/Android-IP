@@ -1,4 +1,4 @@
-package com.example.rickmorty.ui.sanchezmainModel;
+package com.example.rickmorty.models.characters;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.content.Intent;
 
 import com.example.rickmorty.R;
+import com.example.rickmorty.ui.sanchezmainModel.TestActivity;
 
 import butterknife.ButterKnife;
 import butterknife.BindView;

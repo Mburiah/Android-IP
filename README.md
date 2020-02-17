@@ -24,8 +24,10 @@ Lets get Schwifty! (Sn02 E5)
  - android.
 -
 
-//=> 'Copyright (c) 2020, Mburiah'
-
 ### Contact details.
 
 For contributions email at mburiahb@gmail.com
+
+#### Copyright (c) 2020 @Mburiah
+
+#### Licenced under the [MIT License](LICENSE)

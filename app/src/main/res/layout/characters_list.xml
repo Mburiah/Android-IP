@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/IDTextView"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="ID:"
+                android:textColor="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/characterNameTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Name:"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/characterNameTextView"
+            android:text="Status:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speciesTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Species:"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/typeTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Type:"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Gender:"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/originTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Origin:"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Location:"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Image:"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -20,9 +20,11 @@ Lets get Schwifty! (Sn02 E5)
 3. Run the app by clicking the green arrow at the top or ( Shift+F10 )
 
 ### Technologies used.
--Java
- - android.
--
+- Butterknife
+- Retrofit
+- Picasso
+- Java
+- android studio IDE
 
 ### Contact details.
 

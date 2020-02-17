@@ -2,10 +2,13 @@ package com.example.rickmorty.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -30,6 +33,7 @@ public class TestActivity extends AppCompatActivity {
     @BindView(R.id.name) TextView mName;
     @BindView(R.id.error) TextView mError;
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
+    @BindView(R.id.locationButton) Button mLocationButton;
 
 
     @Override
@@ -59,9 +63,17 @@ public class TestActivity extends AppCompatActivity {
             public void onFailure(Call<Response> call, Throwable t) {
 //                Log.e(TAG, "onFailure: ", t);
 //                hideProgressBar();
-//                showFailureMessage();
             }
         });
+
+        mLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestActivity.this, NextActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

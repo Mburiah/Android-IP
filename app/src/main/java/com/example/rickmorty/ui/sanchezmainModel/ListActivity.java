@@ -1,4 +1,4 @@
-package com.example.rickmorty.ui;
+package com.example.rickmorty.models.characters.sanchezmainModel;
 
 import androidx.appcompat.app.AppCompatActivity;
 

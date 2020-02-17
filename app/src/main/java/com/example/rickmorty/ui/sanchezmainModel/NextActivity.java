@@ -1,4 +1,4 @@
-package com.example.rickmorty.ui;
+package com.example.rickmorty.models.characters.sanchezmainModel;
 
 import android.os.Bundle;
 import android.view.View;

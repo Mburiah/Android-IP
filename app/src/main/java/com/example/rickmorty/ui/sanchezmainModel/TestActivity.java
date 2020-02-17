@@ -1,13 +1,10 @@
-package com.example.rickmorty.ui;
+package com.example.rickmorty.models.characters.sanchezmainModel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -18,9 +15,7 @@ import com.example.rickmorty.models.characters.Response;
 import com.example.rickmorty.models.characters.Result;
 import com.example.rickmorty.network.RickandmortyApi;
 import com.example.rickmorty.network.RickandmortyClient;
-import com.google.gson.internal.bind.ArrayTypeAdapter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;

@@ -1,9 +1,8 @@
-package com.example.rickmorty.models.characters.sanchezmainModel;
+package com.example.rickmorty.ui.sanchezmainModel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -11,13 +10,8 @@ import android.widget.TextView;
 import com.example.rickmorty.R;
 
 
-import java.util.List;
-
 import butterknife.ButterKnife;
 import butterknife.BindView;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class ListActivity extends AppCompatActivity{
     @BindView(R.id.showHere) TextView mCharactersTextView;

@@ -6,8 +6,10 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Result implements Serializable
-{
+import org.parceler.Parcel;
+
+@Parcel
+public class Result {
 
     @SerializedName("id")
     @Expose
@@ -49,13 +51,13 @@ public class Result implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
     public Result() {
     }
 
     /**
-     * 
+     *
      * @param image
      * @param gender
      * @param species

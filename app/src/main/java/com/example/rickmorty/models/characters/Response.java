@@ -6,7 +6,10 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Response implements Serializable
+import org.parceler.Parcel;
+
+@Parcel
+public class Response
 {
 
     @SerializedName("info")

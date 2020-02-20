@@ -5,7 +5,10 @@ import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Origin implements Serializable
+import org.parceler.Parcel;
+
+@Parcel
+public class Origin
 {
 
     @SerializedName("name")

@@ -21,7 +21,26 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -40,6 +59,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'org.parceler:parceler-api:1.1.12'
     annotationProcessor 'org.parceler:parceler:1.1.12'
-
-
+//    implementation 'com.firebaseui:firebase-ui-database:3.3.1'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
 }
+
+apply plugin: 'com.google.gms.google-services'

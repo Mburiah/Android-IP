@@ -83,28 +83,14 @@
                 android:paddingRight="30dp">
 
                 <TextView
-                    android:id="@+id/favoriteTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:drawableRight="@drawable/ic_whatshot_black_24dp"
-                    android:drawablePadding="4dp"
-                    android:fontFamily="casual"
-                    android:text="Favorite this character:"
-                    android:textColor="@color/colorTextIcons"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-                <TextView
                     android:id="@+id/wubbaTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/saveCharacterButton"
                     android:layout_marginBottom="10dp"
-                    android:drawableRight="@drawable/round_favorite_black_18"
                     android:drawablePadding="4dp"
                     android:fontFamily="casual"
-                    android:text="Favorite this character:"
+                    android:text="Wubba lubba dub dub!"
                     android:textColor="@color/colorTextIcons"
                     android:textSize="40sp"
                     android:textStyle="italic" />
@@ -117,6 +103,19 @@
                     android:layout_alignRight="@+id/FragCharNameTextView"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:id="@+id/favoriteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableRight="@drawable/ic_whatshot_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="casual"
+                    android:text="Like and follow us on facebook: "
+                    android:textColor="@color/colorTextIcons"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
 
 
             </LinearLayout>

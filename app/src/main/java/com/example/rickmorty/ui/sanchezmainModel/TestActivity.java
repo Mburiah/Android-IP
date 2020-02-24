@@ -5,13 +5,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.provider.SyncStateContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.rickmorty.Constants;
 import com.example.rickmorty.R;
 
 import com.example.rickmorty.adapters.CharactersListAdapter;
@@ -28,9 +32,15 @@ import retrofit2.Call;
 import retrofit2.Callback;
 
 public class TestActivity extends AppCompatActivity {
-    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
+//    private SharedPreferences mSharedPreferences;
+//    private String mRecentCharacter;
+
     private CharactersListAdapter mAdapter;
     List<Result> results;
+
+
+    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
+
     @BindView(R.id.name) TextView mName;
     @BindView(R.id.error) TextView mError;
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
@@ -48,6 +58,15 @@ public class TestActivity extends AppCompatActivity {
                 new LinearLayoutManager(TestActivity.this);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
+
+//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        mRecentCharacter = mSharedPreferences.getString(Constants.PREFERENCES_CHARACTER_KEY, null);
+//        Log.d("Shared Pref Character", mRecentCharacter);
+//
+//        if (mRecentCharacter != null){
+//            getCharacters(mRecentCharacter);
+//        }
+
 
         RickandmortyApi service = RickandmortyClient.getClient().create(RickandmortyApi.class);
         Call<Response> call = service.getInformation();

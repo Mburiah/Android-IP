@@ -10,12 +10,18 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.rickmorty.Constants;
 import com.example.rickmorty.models.characters.Result;
 
 import com.example.rickmorty.R;
 import com.example.rickmorty.models.characters.Result;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
@@ -37,7 +43,7 @@ public class CharacterDetailFragment extends Fragment implements View.OnClickLis
     @BindView(R.id.fragStatusTextView) TextView mFragStatus;
     @BindView(R.id.fragIconImageView) ImageView mFragicon;
     @BindView(R.id.favoriteTextView) TextView mFavorite;
-
+    @BindView(R.id.saveCharacterButton) Button mSaveCharacter;
     private Result mCharacter;
 
     public CharacterDetailFragment() {
@@ -68,25 +74,31 @@ public class CharacterDetailFragment extends Fragment implements View.OnClickLis
 
         Picasso.get().load(mCharacter.getImage()).into(mFragicon);
 
-        List<String> characters = new ArrayList<>();
-
+//        List<String> characters = new ArrayList<>();
 //        for (Character character: mCharacter.getcharacters()){
 //            characters.add(character.getName());
 //        }
+
+
         mFragchar.setText(mCharacter.getName());
         mFragGen.setText(mCharacter.getName());
         mFragStatus.setText(mCharacter.getStatus());
 
-        mFavorite.setOnClickListener(this);
+        mSaveCharacter.setOnClickListener(this);
 
         return view;
     }
 
+
     @Override
     public void onClick(View v){
         if (v == mFavorite) {
-
-            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mCharacter.getUrl()));
+            DatabaseReference characterRef = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Constants.FIREBASE_CHILD_CHARACTERS);
+            characterRef.push().setValue(mCharacter);
+            Toast.makeText(getContext(), "Saved!", Toast.LENGTH_SHORT).show();
+//            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mCharacter.getUrl()));
         }
     }
 

@@ -11,31 +11,61 @@
         android:scaleType="centerCrop"
         android:src="@drawable/getschwifty" />
 
+    <Button
+        android:id="@+id/savedCharactersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="666dp"
+        android:background="@color/colorPrimaryText"
+        android:fontFamily="@font/ruge_boogie"
+        android:text="Favorites"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="visible" />
+
     <EditText
         android:id="@+id/formEdittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/viewMoreButton"
-        android:layout_marginBottom="47dp"
+        android:layout_above="@id/viewMoreButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
         android:background="@color/colorTextIcons"
         android:fontFamily="monospace"
         android:hint="Type your favorite character" />
+
+    <TextView
+        android:id="@+id/facebookView"
+        android:layout_width="203dp"
+        android:layout_height="54dp"
+        android:layout_above="@id/viewMoreButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="516dp"
+        android:background="@color/colorSecondaryText"
+        android:drawableRight="@drawable/ic_whatshot_black_24dp"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/ruge_boogie"
+        android:gravity="center_vertical"
+        android:text="Like and follow us on facebook: "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/viewMoreButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="41dp"
-        android:background="@android:color/holo_blue_bright"
-        android:backgroundTint="@color/colorPrimaryText"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorSecondaryText"
+        android:backgroundTint="@color/colorSecondaryText"
         android:fontFamily="casual"
-        android:text="View more" />
+        android:text="View more"
+        android:visibility="visible" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch" />
 
 </RelativeLayout>

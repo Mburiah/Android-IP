@@ -136,10 +136,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         private void logout(){
             FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
-            finish();
+//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(intent);
+            //finish();
+            startActivity(new Intent(getApplicationContext(),LoginActivity.class));
         }
         MenuItem item;
 
@@ -161,10 +162,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         @Override
         public boolean onOptionsItemSelected(MenuItem Item){
-            int id = item.getItemId();
-            if (id == R.id.action_logout){
-                logout();
-            }
+//            int id = item.getItemId();
+//            if (id == R.id.action_logout){
+//                logout();
+//            }
+            logout();
             return super.onOptionsItemSelected(item);
         }
 

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorTextIcons"
     android:backgroundTint="@color/colorSecondaryText"
-    tools:context="com.example.rickmorty.ui.sanchezmainModel.LoginActivity">
+    tools:context="com.example.rickmorty.ui.sanchezmainModel.login2">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -17,7 +17,7 @@
         android:padding="30dp">
 
         <EditText
-            android:id="@+id/loginEmail"
+            android:id="@+id/lEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -32,7 +32,7 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/loginPass"
+            android:id="@+id/lPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
@@ -47,7 +47,7 @@
 
 
         <Button
-            android:id="@+id/passwordLoginButton"
+            android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -59,7 +59,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/registerTextView"
+            android:id="@+id/lReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

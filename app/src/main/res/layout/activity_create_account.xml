@@ -19,14 +19,14 @@
             android:background="@android:color/white"
             android:fontFamily="monospace"
             android:hint="Name"
-            android:nextFocusDown="@+id/passwordEditText"
+            android:nextFocusDown="@+id/loginPass"
             android:padding="10dp"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorDivider"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/emailEditText"
+            android:id="@+id/loginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -34,14 +34,14 @@
             android:fontFamily="monospace"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:nextFocusDown="@+id/passwordEditText"
+            android:nextFocusDown="@+id/loginPass"
             android:padding="10dp"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorDivider"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/loginPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -49,7 +49,7 @@
             android:fontFamily="monospace"
             android:hint="Password"
             android:inputType="textPassword"
-            android:nextFocusDown="@+id/passwordEditText"
+            android:nextFocusDown="@+id/loginPass"
             android:padding="10dp"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorDivider"
@@ -64,7 +64,7 @@
             android:fontFamily="monospace"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:nextFocusDown="@+id/passwordEditText"
+            android:nextFocusDown="@+id/loginPass"
             android:padding="10dp"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorDivider"

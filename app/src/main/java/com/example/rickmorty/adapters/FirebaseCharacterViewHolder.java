@@ -29,6 +29,8 @@ public class FirebaseCharacterViewHolder extends RecyclerView.ViewHolder impleme
     View mView;
     Context mContext;
 
+    public ImageView mCharacterImageview;
+
     public FirebaseCharacterViewHolder(View itemView){
         super(itemView);
         mView = itemView;

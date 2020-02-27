@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,8 @@ import butterknife.ButterKnife;
  */
 public class CharacterDetailFragment extends Fragment implements View.OnClickListener {
 
+    private static final String TAG = "CharacterDetailFragment";
+
     @BindView(R.id.fragCharNameTextView) TextView mFragchar;
     @BindView(R.id.fragGenderTextView) TextView mFragGen;
     @BindView(R.id.fragStatusTextView) TextView mFragStatus;
@@ -51,6 +54,9 @@ public class CharacterDetailFragment extends Fragment implements View.OnClickLis
     }
 
     public static CharacterDetailFragment newInstance(Result character){
+
+        Log.d(TAG, "newInstance: instantiated");
+        
         CharacterDetailFragment characterDetailFragment = new CharacterDetailFragment();
         Bundle args = new Bundle();
         args.putParcelable("characters", Parcels.wrap(character));
@@ -69,8 +75,12 @@ public class CharacterDetailFragment extends Fragment implements View.OnClickLis
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        Log.d(TAG, "onCreateView from fragment: called");
         View view = inflater.inflate(R.layout.fragment_character_detail, container, false);
         ButterKnife.bind(this, view);
+
+        Log.d(TAG, "onCreateView: image url" + mCharacter.getImage());
 
         Picasso.get().load(mCharacter.getImage()).into(mFragicon);
 
@@ -92,13 +102,13 @@ public class CharacterDetailFragment extends Fragment implements View.OnClickLis
 
     @Override
     public void onClick(View v){
-        if (v == mFavorite) {
+        if (v == mSaveCharacter) {
             DatabaseReference characterRef = FirebaseDatabase
                     .getInstance()
                     .getReference(Constants.FIREBASE_CHILD_CHARACTERS);
             characterRef.push().setValue(mCharacter);
             Toast.makeText(getContext(), "Saved!", Toast.LENGTH_SHORT).show();
-//            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mCharacter.getUrl()));
+            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mCharacter.getUrl()));
         }
     }
 

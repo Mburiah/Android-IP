@@ -23,7 +23,7 @@
         android:layout_marginBottom="666dp"
         android:background="@color/colorPrimaryText"
         android:fontFamily="@font/ruge_boogie"
-        android:text="Favorites"
+        android:text="Favorite saved characters"
         android:textColor="@color/colorPrimaryDark"
         android:visibility="visible" />
 

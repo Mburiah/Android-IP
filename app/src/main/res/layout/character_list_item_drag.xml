@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dragIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="bottom|left"
+                android:src="@drawable/baseline_reorder_black_18dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/characterNameTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Name:"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/characterNameTextView"
+            android:text="Status:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speciesTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Species:"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Gender:"
+            android:textColor="@color/colorPrimary"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Image:"
+            android:textColor="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

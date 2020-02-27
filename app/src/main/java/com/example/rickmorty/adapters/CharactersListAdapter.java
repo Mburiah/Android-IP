@@ -82,7 +82,6 @@ public class CharactersListAdapter extends RecyclerView.Adapter<CharactersListAd
         @Override
         public void onClick(View v){
             int itemPosition = getLayoutPosition();
-
             Intent intent= new Intent(mContext, CharacterDetailActivity.class);
             intent.putExtra("position", itemPosition);
             intent.putExtra("characters", Parcels.wrap(results));

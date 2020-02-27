@@ -10,43 +10,18 @@ import org.parceler.Parcel;
 
 @Parcel
 public class Result {
-
-    @SerializedName("id")
-    @Expose
-    private Integer id;
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("status")
-    @Expose
-    private String status;
-    @SerializedName("species")
-    @Expose
-    private String species;
-    @SerializedName("type")
-    @Expose
-    private String type;
-    @SerializedName("gender")
-    @Expose
-    private String gender;
-    @SerializedName("origin")
-    @Expose
-    private Origin origin;
-    @SerializedName("location")
-    @Expose
-    private Location location;
-    @SerializedName("image")
-    @Expose
-    private String image;
-    @SerializedName("episode")
-    @Expose
-    private List<String> episode = null;
-    @SerializedName("url")
-    @Expose
-    private String url;
-    @SerializedName("created")
-    @Expose
-    private String created;
+     Integer id;
+     String name;
+     String status;
+     String species;
+     String type;
+     String gender;
+     Origin origin;
+     Location location;
+     String image;
+     List<String> episode = null;
+     String url;
+     String created;
     private final static long serialVersionUID = -6259370189538315233L;
 
     /**
@@ -71,6 +46,7 @@ public class Result {
      * @param url
      * @param status
      */
+    String index;
     public Result(Integer id, String name, String status, String species, String type, String gender, Origin origin, Location location, String image, List<String> episode, String url, String created) {
         super();
         this.id = id;
@@ -85,6 +61,13 @@ public class Result {
         this.episode = episode;
         this.url = url;
         this.created = created;
+        this.index = "not_specified";
+    }
+    public String getIndex(){
+        return index;
+    }
+    public void setIndex(String index){
+        this.index = index;
     }
 
     public Integer getId() {

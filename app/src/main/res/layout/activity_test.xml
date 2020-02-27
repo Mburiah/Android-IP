@@ -52,7 +52,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="41dp"
         android:fontFamily="monospace"
-        android:text="View locations" />
+        android:text="Your Character" />
 
 
 </RelativeLayout>

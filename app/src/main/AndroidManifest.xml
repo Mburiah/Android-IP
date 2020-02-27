@@ -3,6 +3,8 @@
     package="com.example.rickmorty">
     <!-- Internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -11,25 +13,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.sanchezmainModel.TestActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".models.characters.MainActivity">
-            </meta-data>
-        </activity>
-        <activity android:name=".models.characters.MainActivity">
-
+        <activity android:name=".ui.sanchezmainModel.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.sanchezmainModel.CharacterDetailActivity">
+
+        </activity>
+        <activity android:name=".ui.sanchezmainModel.CreateAccountActivity" />
+        <activity android:name=".ui.sanchezmainModel.TestActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.sanchezmainModel.MainActivity" />
+        </activity>
+        <activity android:name=".ui.sanchezmainModel.MainActivity">
+
+        </activity>
         <activity android:name=".ui.sanchezmainModel.NextActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.sanchezmainModel.TestActivity">
-            </meta-data>
+                android:value=".ui.sanchezmainModel.TestActivity" />
         </activity>
 
         <meta-data
